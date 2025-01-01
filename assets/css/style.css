@@ -164,6 +164,10 @@ img {
     font-size: 1.25rem;
 }
 
+.empeiria_logo {
+    width: 75%;
+}
+
 .nav__logo:hover {
     color: var(--first-color);
 }
@@ -292,6 +296,7 @@ img {
 
 .home__car-data {
     text-align: center;
+    flex: 1;
 }
 
 .home__car-number {
