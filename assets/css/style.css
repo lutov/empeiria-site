@@ -467,8 +467,10 @@ img {
 
 .popular__img {
     width: 160px;
-    margin: 0.75rem 0 1.25rem 1.5rem;
+    margin: 0.75rem 0 1.25rem 0;
     transition: .3s;
+    border: 3px solid #fff;
+    border-radius: 1rem;
 }
 
 .popular__data {
@@ -1057,7 +1059,7 @@ img {
     }
     .popular__img {
         width: 180px;
-        margin: .75rem 0 1.25rem 2rem;
+        margin: .75rem 0 1.25rem 0;
     }
 
     .features__container {
