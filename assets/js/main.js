@@ -33,8 +33,8 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== POPULAR SWIPER ===============*/
-var swiperPopular = new Swiper(".popular__container", {
+/*=============== PREORDER SWIPER ===============*/
+var swiperPreorder = new Swiper(".preorder__container", {
     loop: true,
     spaceBetween: 24,
     slidesPerView: 'auto',
@@ -54,24 +54,24 @@ var swiperPopular = new Swiper(".popular__container", {
       },
   });
 
-/*=============== MIXITUP FILTER FEATURED ===============*/
-let mixerFeatured = mixitup('.featured__content', {
+/*=============== MIXITUP FILTER PRESS ===============*/
+let mixerPress = mixitup('.press__content', {
   selectors: {
-      target: '.featured__card'
+      target: '.press__card'
   },
   animation: {
       duration: 300
   }
 });
 
-/* Link active featured */ 
-const linkFeatured = document.querySelectorAll('.featured__item')
+/* Link active press */
+const linkPress = document.querySelectorAll('.press__item')
 
-function activeFeatured() {
-  linkFeatured.forEach(l => l.classList.remove('active-featured'))
-  this.classList.add('active-featured')
+function activePress() {
+  linkPress.forEach(l => l.classList.remove('active-press'))
+  this.classList.add('active-press')
 }
-linkFeatured.forEach(l=> l.addEventListener('click', activeFeatured))
+linkPress.forEach(l=> l.addEventListener('click', activePress))
 
 /*=============== SHOW SCROLL UP ===============*/ 
 function scrollUp() {
@@ -111,7 +111,7 @@ const sr = ScrollReveal({
   // reset: true
 })
 
-sr.reveal('.home__title, .popular__container, .features__img, .featured__filtres')
+sr.reveal('.home__title, .preorder__container, .features__img, .press__filtres')
 sr.reveal('.home__subtitle', {delay: 500})
 sr.reveal('.home__elec', {delay: 600})
 sr.reveal('.home__img', {delay: 800})
@@ -121,4 +121,4 @@ sr.reveal('.about__group, .offer__data', {origin: 'left'})
 sr.reveal('.about__data, .offer__img', {origin: 'right'})
 sr.reveal('.features__map', {delay: 600, origin: 'bottom'})
 sr.reveal('.features__card', {interval: 300})
-sr.reveal('.featured__card, .logos__content, .footer__content', {interval: 100})
+sr.reveal('.press__card, .logos__content, .footer__content', {interval: 100})

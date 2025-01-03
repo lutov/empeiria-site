@@ -56,10 +56,10 @@
                             <a href="#about" class="nav__link">Об игре</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#popular" class="nav__link">Предзаказ</a>
+                            <a href="#preorder" class="nav__link">Предзаказ</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#featured" class="nav__link">Пресс-кит</a>
+                            <a href="#press" class="nav__link">Пресс-кит</a>
                         </li>
                     </ul>
 
@@ -126,7 +126,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="home__button">PLAY</a>
+                    <a href="#preorder" class="home__button">PLAY</a>
                 </div>
             </section>
 
@@ -139,7 +139,7 @@
                         <div class="about__card">
                             <h3 class="about__card-title">Стратегия и тактика</h3>
                             <p class="about__card-description">
-                                Отряд герове путешествует на глобальной карте и сражается на тактических аренах.
+                                Отряд героев путешествует на глобальной карте и сражается на тактических аренах.
                             </p>
                         </div>
                     </div>
@@ -184,149 +184,199 @@
                 </div>
             </section>
 
-            <!--==================== POPULAR ====================-->
-            <section class="popular section" id="popular">
+            <!--==================== PREORDER ====================-->
+            <section class="preorder section" id="preorder">
                 <h2 class="section__title">
-                    Предзаказ <br> в начале 2026-го года
+                    Предзаказ
                 </h2>
 
-                <div class="popular__container container swiper">
+                <div class="container unisender__container">
+
+                    <div class="unisender__data-group">
+                        Следите за игрой в соцсетях
+                    </div>
+
+                    <ul class="preorder__social">
+                        <li>
+                            <a href="https://vk.com/empeiria_game" target="_blank" class="preorder__social-link">
+                                <i class="ri-vk-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/empeiria_game" target="_blank" class="preorder__social-link">
+                                <i class="ri-telegram-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.reddit.com/r/empeiria_game/" target="_blank" class="preorder__social-link">
+                                <i class="ri-reddit-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <form method="POST"
+                          action="https://cp.unisender.com/ru/subscribe?hash=6qajbpd8pgoxe7x9yiqq3qcqbsm6opfrm6k1hko6gfmmfr49dr58y"
+                          name="subscribtion_form"
+                          target="_blank">
+                        <div class="subscribe-form-item subscribe-form-item--input-email">
+                            <label class="subscribe-form-item__label subscribe-form-item__label--input-email subscribe-form-item__label--required">
+                                Подпишитесь, чтобы узнать о старте предзаказов
+                                <br>
+                                <input class="subscribe-form-item__control subscribe-form-item__control--input-email"
+                                       type="text" name="email" value="" placeholder="E-mail">
+                            </label>
+                        </div>
+                        <div class="subscribe-form-item subscribe-form-item--btn-submit">
+                            <input class="subscribe-form-item__btn subscribe-form-item__btn--btn-submit button"
+                                   type="submit" value="Подписаться">
+                        </div>
+                        <input type="hidden" name="charset" value="UTF-8">
+                        <input type="hidden" name="default_list_id" value="1">
+                        <input type="hidden" name="overwrite" value="2">
+                        <input type="hidden" name="is_v5" value="1">
+                    </form>
+                </div>
+
+                <h2 class="section__title soundtrack__title">
+                    Саундтрек
+                </h2>
+                <div class="preorder__container container swiper">
                     <div class="swiper-wrapper">
-                        <article class="popular__card swiper-slide">
+                        <article class="preorder__card swiper-slide">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="popular__title">Эмпирия OST</h1>
-                            <h3 class="popular_subtitle">Часть 1</h3>
+                            <h1 class="preorder__title">Эмпирия OST</h1>
+                            <h3 class="preorder_subtitle">Часть 1</h3>
 
                             <a href="https://band.link/empeiria" target="_blank">
-                            <img src="assets/img/popular1.png" alt="" class="popular__img">
+                            <img src="assets/img/preorder1.png" alt="" class="preorder__img">
                             </a>
 
-                            <div class="popular__data">
-                                <div class="popular__data-group">
+                            <div class="preorder__data">
+                                <div class="preorder__data-group">
                                     <i class="ri-file-music-line"></i> 10 треков
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-time-line"></i> 30 минут
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-music-line"></i> Рок
                                 </div>
                             </div>
 
-                            <h3 class="popular__price">31.12.2024</h3>
+                            <h3 class="preorder__price">31.12.2024</h3>
 
                             <a href="https://band.link/empeiria" target="_blank">
-                            <button class="button popular__button">
+                            <button class="button preorder__button">
                                 <i class="ri-headphone-line"></i>
                             </button>
                             </a>
                         </article>
 
-                        <article class="popular__card swiper-slide">
+                        <article class="preorder__card swiper-slide">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="popular__title">Эмпирия OST</h1>
-                            <h3 class="popular_subtitle">Часть 2</h3>
+                            <h1 class="preorder__title">Эмпирия OST</h1>
+                            <h3 class="preorder_subtitle">Часть 2</h3>
 
-                            <img src="assets/img/popular2.png" alt="" class="popular__img">
+                            <img src="assets/img/preorder2.png" alt="" class="preorder__img">
 
-                            <div class="popular__data">
-                                <div class="popular__data-group">
+                            <div class="preorder__data">
+                                <div class="preorder__data-group">
                                     <i class="ri-file-music-line"></i> 10 треков
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-time-line"></i> 33 минуты
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-music-line"></i> Рок
                                 </div>
                             </div>
 
-                            <h3 class="popular__price">TBA</h3>
+                            <h3 class="preorder__price">TBA</h3>
 
-                            <!--button class="button popular__button">
+                            <!--button class="button preorder__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button-->
                         </article>
 
-                        <article class="popular__card swiper-slide">
+                        <article class="preorder__card swiper-slide">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="popular__title">Эмпирия OST</h1>
-                            <h3 class="popular_subtitle">Часть 3</h3>
+                            <h1 class="preorder__title">Эмпирия OST</h1>
+                            <h3 class="preorder_subtitle">Часть 3</h3>
 
-                            <img src="assets/img/popular3.png" alt="" class="popular__img">
+                            <img src="assets/img/preorder3.png" alt="" class="preorder__img">
 
-                            <div class="popular__data">
-                                <div class="popular__data-group">
+                            <div class="preorder__data">
+                                <div class="preorder__data-group">
                                     <i class="ri-file-music-line"></i> 10 треков
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-time-line"></i> 20 минут
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-music-line"></i> Рок
                                 </div>
                             </div>
 
-                            <h3 class="popular__price">TBA</h3>
+                            <h3 class="preorder__price">TBA</h3>
 
-                            <!--button class="button popular__button">
+                            <!--button class="button preorder__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button-->
                         </article>
 
-                        <article class="popular__card swiper-slide">
+                        <article class="preorder__card swiper-slide">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="popular__title">Невидимый цвет</h1>
-                            <h3 class="popular_subtitle">2024</h3>
+                            <h1 class="preorder__title">Невидимый цвет</h1>
+                            <h3 class="preorder_subtitle">2024</h3>
 
-                            <img src="assets/img/popular4.png" alt="" class="popular__img">
+                            <img src="assets/img/preorder4.png" alt="" class="preorder__img">
 
-                            <div class="popular__data">
-                                <div class="popular__data-group">
+                            <div class="preorder__data">
+                                <div class="preorder__data-group">
                                     <i class="ri-file-music-line"></i> 10 треков
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-time-line"></i> 28 минут
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-music-line"></i> Рок
                                 </div>
                             </div>
 
-                            <h3 class="popular__price">TBA</h3>
+                            <h3 class="preorder__price">TBA</h3>
 
-                            <!--button class="button popular__button">
+                            <!--button class="button preorder__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button-->
                         </article>
 
-                        <!--article class="popular__card swiper-slide">
+                        <!--article class="preorder__card swiper-slide">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="popular__title">Porsche</h1>
-                            <h3 class="popular_subtitle">Cayman</h3>
+                            <h1 class="preorder__title">Porsche</h1>
+                            <h3 class="preorder_subtitle">Cayman</h3>
 
-                            <img src="assets/img/popular5.png" alt="" class="popular__img">
+                            <img src="assets/img/preorder5.png" alt="" class="preorder__img">
 
-                            <div class="popular__data">
-                                <div class="popular__data-group">
+                            <div class="preorder__data">
+                                <div class="preorder__data-group">
                                     <i class="ri-dashboard-3-line"></i> 3.7 Sec
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-funds-box-line"></i> 356 Km
                                 </div>
-                                <div class="popular__data-group">
+                                <div class="preorder__data-group">
                                     <i class="ri-charging-pile-2-line"></i> Electric
                                 </div>
                             </div>
 
-                            <h3 class="popular__price">$128,900</h3>
+                            <h3 class="preorder__price">$128,900</h3>
 
-                            <button class="button popular__button">
+                            <button class="button preorder__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button>
                         </article-->
@@ -365,113 +415,113 @@
                 <img src="assets/img/map.svg" alt="" class="features__map">
             </section-->
 
-            <!--==================== FEATURED ====================-->
-            <section class="featured section" id="featured">
+            <!--==================== PRESS ====================-->
+            <section class="press section" id="press">
                 <h2 class="section__title">
                     Пресс-кит (в разработке)
                 </h2>
 
-                <!--div class="featured__container container">
-                    <ul class="featured__filters">
+                <!--div class="press__container container">
+                    <ul class="press__filters">
                         <li>
-                            <button class="featured__item active-featured" data-filter="all">
+                            <button class="press__item active-press" data-filter="all">
                                 <span>All</span>
                             </button>
                         </li>
                         <li>
-                            <button class="featured__item" data-filter=".tesla">
+                            <button class="press__item" data-filter=".tesla">
                                 <img src="assets/img/logo3.png" alt="">
                             </button>
                         </li>
                         <li>
-                            <button class="featured__item" data-filter=".audi">
+                            <button class="press__item" data-filter=".audi">
                                 <img src="assets/img/logo2.png" alt="">
                             </button>
                         </li>
                         <li>
-                            <button class="featured__item" data-filter=".porshe">
+                            <button class="press__item" data-filter=".porshe">
                                 <img src="assets/img/logo1.png" alt="">
                             </button>
                         </li>
                     </ul>
 
-                    <div class="featured__content grid">
-                        <article class="featured__card mix tesla">
+                    <div class="press__content grid">
+                        <article class="press__card mix tesla">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="featured__title">Tesla</h1>
+                            <h1 class="press__title">Tesla</h1>
 
-                            <h3 class="featured__subtitle">Model X</h3>
+                            <h3 class="press__subtitle">Model X</h3>
 
-                            <img src="assets/img/featured1.png" alt="" class="featured__img">
+                            <img src="assets/img/press1.png" alt="" class="press__img">
 
-                            <h3 class="featured__price">$98,900</h3>
+                            <h3 class="press__price">$98,900</h3>
 
-                            <button class="button featured__button">
+                            <button class="button press__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button>
                         </article>
 
-                        <article class="featured__card mix tesla">
+                        <article class="press__card mix tesla">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="featured__title">Tesla</h1>
+                            <h1 class="press__title">Tesla</h1>
 
-                            <h3 class="featured__subtitle">Model 3</h3>
+                            <h3 class="press__subtitle">Model 3</h3>
 
-                            <img src="assets/img/featured2.png" alt="" class="featured__img">
+                            <img src="assets/img/press2.png" alt="" class="press__img">
 
-                            <h3 class="featured__price">$45,900</h3>
+                            <h3 class="press__price">$45,900</h3>
 
-                            <button class="button featured__button">
+                            <button class="button press__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button>
                         </article>
 
-                        <article class="featured__card mix audi">
+                        <article class="press__card mix audi">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="featured__title">Audi</h1>
+                            <h1 class="press__title">Audi</h1>
 
-                            <h3 class="featured__subtitle">E-tron</h3>
+                            <h3 class="press__subtitle">E-tron</h3>
 
-                            <img src="assets/img/featured3.png" alt="" class="featured__img">
+                            <img src="assets/img/press3.png" alt="" class="press__img">
 
-                            <h3 class="featured__price">$175,900</h3>
+                            <h3 class="press__price">$175,900</h3>
 
-                            <button class="button featured__button">
+                            <button class="button press__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button>
                         </article>
 
-                        <article class="featured__card mix porshe">
+                        <article class="press__card mix porshe">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="featured__title">Porsche</h1>
+                            <h1 class="press__title">Porsche</h1>
 
-                            <h3 class="featured__subtitle">Boxster 987</h3>
+                            <h3 class="press__subtitle">Boxster 987</h3>
 
-                            <img src="assets/img/featured4.png" alt="" class="featured__img">
+                            <img src="assets/img/press4.png" alt="" class="press__img">
 
-                            <h3 class="featured__price">$126,900</h3>
+                            <h3 class="press__price">$126,900</h3>
 
-                            <button class="button featured__button">
+                            <button class="button press__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button>
                         </article>
 
-                        <article class="featured__card mix porshe">
+                        <article class="press__card mix porshe">
                             <div class="shape shape__smaller"></div>
 
-                            <h1 class="featured__title">Porsche</h1>
+                            <h1 class="press__title">Porsche</h1>
 
-                            <h3 class="featured__subtitle">Panamera</h3>
+                            <h3 class="press__subtitle">Panamera</h3>
 
-                            <img src="assets/img/featured5.png" alt="" class="featured__img">
+                            <img src="assets/img/press5.png" alt="" class="press__img">
 
-                            <h3 class="featured__price">$126,900</h3>
+                            <h3 class="press__price">$126,900</h3>
 
-                            <button class="button featured__button">
+                            <button class="button press__button">
                                 <i class="ri-shopping-bag-2-line"></i>
                             </button>
                         </article>
@@ -540,85 +590,87 @@
             <div class="shape shape__big"></div>
             <div class="shape shape__small"></div>
 
-            <!--div class="footer__container container grid">
+            <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
-                        <i class="ri-steering-line"></i> Эмпирия
+                        Эмпирия
                     </a>
 
                     <p class="footer__description">
-                        We offer the best electric cars of <br> 
-                        the most recognized brands in <br> 
-                        the world.
+                        Примите участие в Великом Турнире <br>
+                        сразитесь с сильнейшими бойцами этого мира <br>
+                        и получите шанс обрести бессмертие.
                     </p>
                 </div>
 
                 <div class="footer__content">
                     <h3 class="footer__title">
-                        Company
+                        Команда
                     </h3>
 
                     <ul class="footer__links">
                         <li>
-                            <a href="#" class="footer__link">About</a>
+                            <a href="#" class="footer__link">Участники</a>
                         </li>
                         <li>
-                            <a href="#" class="footer__link">Cars</a>
+                            <a href="https://vk.com/empeiria_band" class="footer__link" target="_blank">Группа
+                                «Эмпирия»</a>
                         </li>
                         <li>
-                            <a href="#" class="footer__link">History</a>
+                            <a href="#" class="footer__link">История</a>
                         </li>
                         <li>
-                            <a href="#" class="footer__link">Shop</a>
+                            <a href="#" class="footer__link">Вакансии</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer__content">
                     <h3 class="footer__title">
-                        Information
+                        Информация
                     </h3>
 
                     <ul class="footer__links">
                         <li>
-                            <a href="#" class="footer__link">Request a quote</a>
+                            <a href="#press" class="footer__link">Пресс-кит</a>
                         </li>
                         <li>
-                            <a href="#" class="footer__link">Find a dealer</a>
+                            <a href="https://vk.com/@-30777806-gdd" class="footer__link"
+                               target="_blank">Дизайн-документ</a>
                         </li>
                         <li>
-                            <a href="#" class="footer__link">Contact us</a>
+                            <a href="https://vk.com/im?sel=-30777806" class="footer__link" target="_blank">Контакты</a>
                         </li>
-                        <li>
+                        <!--li>
                             <a href="#" class="footer__link">Services</a>
-                        </li>
+                        </li-->
                     </ul>
                 </div>
 
                 <div class="footer__content">
                     <h3 class="footer__title">
-                        Follow us
+                        Соцсети
                     </h3>
 
                     <ul class="footer__social">
                         <li>
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                                <i class="ri-facebook-fill"></i>
+                            <a href="https://vk.com/empeiria_game" target="_blank" class="footer__social-link">
+                                <i class="ri-vk-fill"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                                <i class="ri-instagram-fill"></i>
+                            <a href="https://t.me/empeiria_game" target="_blank" class="footer__social-link">
+                                <i class="ri-telegram-fill"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                                <i class="ri-twitter-fill"></i>
+                            <a href="https://www.reddit.com/r/empeiria_game/" target="_blank" class="footer__social-link">
+                                <i class="ri-reddit-fill"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-            </div-->
+            </div>
 
             <span class="footer__copy">
                 &#169; <a href="https://buhurt.ru">Buhurt Team</a>
