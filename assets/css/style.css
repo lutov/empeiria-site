@@ -757,6 +757,15 @@ img {
     opacity: 1;
 }
 
+.press__link h2 {
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.press__description {
+    text-align: center;
+}
+
 /*=============== OFFER ===============*/
 .offer {
     position: relative;
