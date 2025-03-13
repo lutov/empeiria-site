@@ -111,8 +111,7 @@ h2 {
     display: block;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
-    padding-top: 4em;
+    padding: 4em 20px;
     background: white;
 }
 
@@ -175,6 +174,12 @@ img {
     margin: 0 auto;
     max-width: 75%; /* 100% */
 	border-radius: 1rem;
+}
+
+.yandex-music-iframe {
+    display: block;
+    margin: 1em auto;
+    border-radius: 1rem;
 }
 
 .container .hide {

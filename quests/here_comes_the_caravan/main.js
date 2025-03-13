@@ -110,6 +110,18 @@
                     delay += 200.0;
                 }
 
+                // MUSIC: src
+                if( splitTag && splitTag.property === "MUSIC" ) {
+                    let iframeElement = document.createElement('iframe');
+                    iframeElement.src = 'https://music.yandex.ru/iframe/' + splitTag.val;
+                    iframeElement.setAttribute('frameborder', '0');
+                    iframeElement.setAttribute('allow', 'clipboard-write');
+                    iframeElement.classList.add("yandex-music-iframe");
+                    iframeElement.style.width = "75%";
+                    iframeElement.style.height = "200px";
+                    storyContainer.appendChild(iframeElement);
+                }
+
                 // LINK: url
                 else if( splitTag && splitTag.property == "LINK" ) {
                     window.location.href = splitTag.val;
