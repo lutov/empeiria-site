@@ -147,6 +147,7 @@
                 else if( tag == "CLEAR" || tag == "RESTART" ) {
                     removeAll("p");
                     removeAll("img");
+                    removeAll("iframe");
 
                     // Comment out this line if you want to leave the header visible when clearing
                     setVisible(".header", false);
@@ -406,6 +407,7 @@
         if (rewindEl) rewindEl.addEventListener("click", function(event) {
             removeAll("p");
             removeAll("img");
+            removeAll("iframe");
             setVisible(".header", false);
             restart();
         });
@@ -432,6 +434,7 @@
 
             removeAll("p");
             removeAll("img");
+            removeAll("iframe");
             try {
                 let savedState = window.localStorage.getItem('save-state');
                 if (savedState) story.state.LoadJson(savedState);
